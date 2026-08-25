@@ -245,68 +245,123 @@
             <span class="eyebrow"><span class="tick"></span>The Rooms</span>
             <h2>Eight rooms, eight moods.</h2>
             <p>
-              Every room at Samaya is styled with its own character, pick the
+              Every room at Samaya is styled with its own character — pick the
               one that fits your shoot, or ask us to recommend one.
             </p>
           </div>
 
+          <div class="price-toggle" role="tablist" aria-label="Pricing view">
+            <button
+              type="button"
+              class="toggle-btn active"
+              data-view="photo"
+              role="tab"
+              aria-selected="true"
+            >
+              Photography
+            </button>
+            <button
+              type="button"
+              class="toggle-btn"
+              data-view="video"
+              role="tab"
+              aria-selected="false"
+            >
+              Videography
+            </button>
+          </div>
+
           <div class="rooms-grid">
-            <a class="room-card" href="services.html#the-chronicle">
+            <a
+              class="room-card"
+              href="services.html#the-chronicle"
+              data-photo-from="20,000"
+              data-video-hide
+            >
               <div class="room-photo">
                 <img
                   src="assets/room_1.jpg"
-                  alt="The Chronicle newsprint-lined studio room"
+                  alt="The Chronicle — newsprint-lined studio room"
                 />
               </div>
               <div class="room-meta">
-                <h4>The Chronicle</h4>
+                <h4 class="room-name">The Chronicle</h4>
                 <span class="from">From ₦20,000</span>
               </div>
             </a>
-            <a class="room-card" href="services.html#the-muse">
+            <a
+              class="room-card"
+              href="services.html#the-muse"
+              data-photo-from="20,000"
+              data-video-hide
+            >
               <div class="room-photo">
                 <img
                   src="assets/room_7.jpg"
-                  alt="The Muse landscape art studio room"
+                  alt="The Muse — landscape art studio room"
                 />
               </div>
               <div class="room-meta">
-                <h4>The Muse</h4>
+                <h4 class="room-name">The Muse</h4>
                 <span class="from">From ₦20,000</span>
               </div>
             </a>
-            <a class="room-card" href="services.html#the-ember">
+            <a
+              class="room-card"
+              href="services.html#the-ember"
+              data-photo-from="15,000"
+              data-video-hide
+            >
               <div class="room-photo">
                 <img
                   src="assets/room_4.jpg"
-                  alt="The Ember terracotta studio room"
+                  alt="The Ember — terracotta studio room"
                 />
               </div>
               <div class="room-meta">
-                <h4>The Ember</h4>
+                <h4 class="room-name">The Ember</h4>
+                <span class="from">From ₦15,000</span>
+              </div>
+            </a>
+            <a
+              class="room-card"
+              href="services.html#the-haven"
+              data-photo-from="20,000"
+              data-video-from="30,000"
+              data-video-name="The Haven / Chronicle"
+            >
+              <div class="room-photo">
+                <img
+                  src="assets/room_3.PNG"
+                  alt="The Haven — arched niche studio room"
+                />
+              </div>
+              <div class="room-meta">
+                <h4 class="room-name">The Haven</h4>
                 <span class="from">From ₦20,000</span>
               </div>
             </a>
-            <a class="room-card" href="services.html#the-haven">
+
+            <a
+              class="room-card"
+              href="services.html#the-golden"
+              data-photo-from="10,000"
+              data-video-hide
+            >
               <div class="room-photo">
-                <img
-                  src="assets/room_3.jpg"
-                  alt="The Haven arched niche studio room"
-                />
+                <img src="assets/room_8.JPG" alt="The Golden" />
               </div>
               <div class="room-meta">
-                <h4>The Haven</h4>
-                <span class="from">From ₦25,000</span>
-              </div>
-            </a>
-            <a class="room-card" href="services.html#the-golden">
-              <div class="room-photo swatch"><span>The Golden</span></div>
-              <div class="room-meta">
-                <h4>The Golden</h4>
+                <h4 class="room-name">The Golden</h4>
                 <span class="from">From ₦10,000</span>
               </div>
             </a>
-            <a class="room-card" href="services.html#the-canvas">
+            <a
+              class="room-card"
+              href="services.html#the-canvas"
+              data-photo-from="20,000"
+              data-video-from="25,000"
+            >
               <div class="room-photo">
                 <img
                   src="assets/room_6.jpg"
@@ -314,11 +369,16 @@
                 />
               </div>
               <div class="room-meta">
-                <h4>The Canvas</h4>
-                <span class="from">From ₦25,000</span>
+                <h4 class="room-name">The Canvas</h4>
+                <span class="from">From ₦20,000</span>
               </div>
             </a>
-            <a class="room-card" href="services.html#the-aura">
+            <a
+              class="room-card"
+              href="services.html#the-aura"
+              data-photo-from="20,000"
+              data-video-from="40,000"
+            >
               <div class="room-photo">
                 <img
                   src="assets/room_5.jpg"
@@ -326,20 +386,25 @@
                 />
               </div>
               <div class="room-meta">
-                <h4>The Aura</h4>
-                <span class="from">From ₦25,000</span>
+                <h4 class="room-name">The Aura</h4>
+                <span class="from">From ₦20,000</span>
               </div>
             </a>
-            <a class="room-card" href="services.html#the-legacy">
+            <a
+              class="room-card"
+              href="services.html#the-legacy"
+              data-photo-from="20,000"
+              data-video-from="25,000"
+            >
               <div class="room-photo">
                 <img
-                  src="assets/room_2.jpg"
+                  src="assets/room_2.PNG"
                   alt="The Legacy — vintage record-themed studio room"
                 />
               </div>
               <div class="room-meta">
-                <h4>The Legacy</h4>
-                <span class="from">From ₦25,000</span>
+                <h4 class="room-name">The Legacy</h4>
+                <span class="from">From ₦20,000</span>
               </div>
             </a>
           </div>

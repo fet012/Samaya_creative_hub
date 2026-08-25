@@ -35,7 +35,7 @@ body {
   color: var(--charcoal);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-   padding-top: 88px;
+  padding-top: 88px;
 }
 
 /* .hero {
@@ -67,7 +67,6 @@ h4 {
   padding: 0 32px;
 }
 
-/* ---- eyebrow / tick label, echoes the clock-face motif in the mark ---- */
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -157,7 +156,7 @@ h4 {
   left: 0;
   right: 0;
   z-index: 50;
-  background: rgba(250,247,242,0.97);
+  background: rgba(250, 247, 242, 0.97);
   border-bottom: 1px solid var(--line);
 }
 .site-header .wrap {
@@ -466,7 +465,6 @@ hr.hairline {
   border-top: 1px solid rgba(250, 247, 242, 0.16);
 }
 
-/* ---- intro split ---- */
 .intro-split {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -485,7 +483,6 @@ hr.hairline {
   }
 }
 
-/* ---- services grid (icon based, home preview) ---- */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1112,4 +1109,118 @@ form.book-form {
   height: 8pc;
   width: auto;
   display: block;
+}
+
+/* ---- price toggle ---- */
+.price-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.toggle-btn {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  background: var(--cream);
+  color: var(--muted);
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+.toggle-btn + .toggle-btn {
+  border-left: 1px solid var(--line);
+}
+.toggle-btn.active {
+  background: var(--bronze);
+  color: var(--cream);
+}
+.room-card.is-hidden {
+  display: none;
+}
+
+.toggle-btn {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  background: var(--cream);
+  color: var(--muted);
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+.toggle-btn + .toggle-btn {
+  border-left: 1px solid var(--line);
+}
+.toggle-btn.active {
+  background: var(--bronze);
+  color: var(--cream);
+}
+.room-listing.is-hidden {
+  display: none;
+}
+
+/* ---- lightbox ---- */
+.room-listing .photo img {
+  cursor: zoom-in;
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(27, 26, 24, 0.94);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+  padding: 40px;
+}
+.lightbox.open {
+  display: flex;
+}
+.lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 3px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 247, 242, 0.4);
+  background: transparent;
+  color: var(--cream);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease;
+}
+.lightbox-close:hover {
+  border-color: var(--cream);
+}
+@media (max-width: 600px) {
+  .lightbox {
+    padding: 16px;
+  }
+  .lightbox-close {
+    top: 12px;
+    right: 12px;
+  }
 }
